@@ -1,0 +1,11 @@
+# Core benchmark runtimes (Python 3.11 recommended).
+numpy>=1.26,<3
+opencv-python-headless>=4.10,<5
+psutil>=5.9,<8
+onnxruntime>=1.18,<2
+Pillow>=10,<13
+
+# Optional engines are intentionally installed separately because their
+# PyTorch/device constraints differ by platform:
+#   transparent-background  (InSPyReNet)
+#   torch + mobile-sam       (MobileSAM)

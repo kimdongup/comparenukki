@@ -1,0 +1,29 @@
+name: comparenukki
+description: "8-Background Removal Algorithm Benchmark & Visual Comparison Platform in Flutter BLoC"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+  flutter_highlight: ^0.7.0
+  path_provider: ^2.1.4
+  file_picker: ^8.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/samples/
+    - backend/engine_worker.py
+    - backend/engine_registry.py
+    - backend/engines/
