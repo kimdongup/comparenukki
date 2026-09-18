@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "comparenukki (macos)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "toolArgs": ["-d", "macos"],
+      "env": {
+        "COMPARENUKKI_PYTHON": "${workspaceFolder}/.venv/bin/python3",
+        "COMPARENUKKI_BACKEND_DIR": "${workspaceFolder}/backend",
+        "NUKKI_MODEL_DIR": "${env:HOME}/.u2net",
+        "U2NET_MODEL_PATH": "${env:HOME}/.u2net/u2net.onnx",
+        "ISNET_MODEL_PATH": "${env:HOME}/.u2net/isnet-general-use.onnx",
+        "BIREFNET_MODEL_PATH": "${env:HOME}/.u2net/birefnet-general.onnx",
+        "RMBG_MODEL_PATH": "${env:HOME}/.u2net/bria_rmbg14.onnx",
+        "INSPYRENET_CHECKPOINT": "${env:HOME}/.transparent-background/ckpt_base.pth",
+        "MOBILESAM_CHECKPOINT": "${env:HOME}/.u2net/mobile_sam.pt",
+        "NUKKI_ORT_THREADS": "4",
+        "NUKKI_MAX_RESIDENT_MODELS": "2",
+        "NUKKI_LOG_LEVEL": "WARNING"
+      }
+    }
+  ]
+}
