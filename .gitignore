@@ -1,3 +1,6 @@
+.venv/
+.u2net/
+.transparent-backgroud/
 # Miscellaneous
 *.class
 *.log
